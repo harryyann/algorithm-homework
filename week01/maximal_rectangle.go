@@ -1,5 +1,7 @@
 package week01
 
+// https://leetcode-cn.com/problems/maximal-rectangle/
+
 func maximalRectangle(matrix [][]byte) int {
 	// 想办法凑成84题的样子，一行行遍历，每次都可以构造出一个柱状图数组
 	if len(matrix) == 0 || len(matrix[0]) == 0{

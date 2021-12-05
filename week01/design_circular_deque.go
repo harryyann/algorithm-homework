@@ -1,5 +1,7 @@
 package week01
 
+// https://leetcode-cn.com/problems/design-circular-deque/
+
 type MyCircularDeque struct {
 	q []int
 	length int
