@@ -22,7 +22,6 @@ func dfs(i int, nums []int, scheme []int, used map[int]bool, ans *[][]int){
 	}
 
 	for j:=0; j<len(nums); j++{
-		// 要判断排列是不是有重复的话，
 		if !used[j]{
 			// j > 0 防止数组越界，因为等于0是肯定不重复，判断这个元素是否和前一个相同，相同就要被剪掉
 			// 这里用used[j-1]==true或used[j-1]==false都可以，false是剪大枝，true是剪小枝
